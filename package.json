@@ -3,7 +3,7 @@
   "description": "nideshop - open source mini program shop",
   "version": "1.0.0",
   "scripts": {
-    "start": "node development.js",
+    "start": "run-s compile publish",
     "dev": "node development.js",
     "publish": "node production.js",
     "compile": "babel --no-babelrc src/ --presets think-node --out-dir app/",
@@ -26,11 +26,11 @@
     "think-model-mysql": "^1.0.0",
     "thinkjs": "^3.0.0",
     "weixinpay": "^1.0.12",
+    "npm-run-all":"^4.1.2",
     "xml2js": "^0.4.19"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
-    "npm-run-all":"^4.1.2",
     "babel-preset-think-node": "^1.0.0",
     "node-notifier": "^5.0.2",
     "think-watcher": "^3.0.0",
