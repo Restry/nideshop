@@ -27,9 +27,7 @@
     "thinkjs": "^3.0.0",
     "weixinpay": "^1.0.12",
     "npm-run-all":"^4.1.2",
-    "xml2js": "^0.4.19"
-  },
-  "devDependencies": {
+    "xml2js": "^0.4.19",
     "babel-cli": "^6.24.1",
     "babel-preset-think-node": "^1.0.0",
     "node-notifier": "^5.0.2",
