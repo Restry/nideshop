@@ -3,7 +3,8 @@
   "description": "nideshop - open source mini program shop",
   "version": "1.0.0",
   "scripts": {
-    "start": "node development.js",
+    "start": "run-s compile publish",
+    "publish": "node production.js",
     "compile": "babel --no-babelrc src/ --presets think-node --out-dir app/",
     "lint": "eslint src/",
     "lint-fix": "eslint --fix src/"
@@ -28,6 +29,7 @@
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
+    "npm-run-all":"^4.1.2",
     "babel-preset-think-node": "^1.0.0",
     "node-notifier": "^5.0.2",
     "think-watcher": "^3.0.0",
