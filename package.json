@@ -3,7 +3,8 @@
   "description": "nideshop - open source mini program shop",
   "version": "1.0.0",
   "scripts": {
-    "start": "run-s compile publish",
+    "start": "node development.js",
+    "dev": "node development.js",
     "publish": "node production.js",
     "compile": "babel --no-babelrc src/ --presets think-node --out-dir app/",
     "lint": "eslint src/",
@@ -41,7 +42,8 @@
   "repository": "",
   "license": "MIT",
   "engines": {
-    "node": ">=6.0.0"
+    "node": ">=6.0.0",
+    "npm": ">5.7.1"
   },
   "readmeFilename": "README.md"
 }
