@@ -15,7 +15,7 @@ module.exports = {
     request_url: 'http://api.kdniao.cc/Ebusiness/EbusinessOrderHandle.aspx'
   },
   //imgUrlPrefix: "http://127.0.0.1:8360",
-  imgUrlPrefix: "http://cdn.flyinthesky.cn",
+  imgUrlPrefix: "https://api.windart.vip",
 
   imgRootPath:"/www", // 上传图片所在目录
 
