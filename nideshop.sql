@@ -138,7 +138,7 @@ CREATE TABLE `nideshop_admin` (
 
 LOCK TABLES `nideshop_admin` WRITE;
 /*!40000 ALTER TABLE `nideshop_admin` DISABLE KEYS */;
-INSERT INTO `nideshop_admin` VALUES (1,'admin','574ac932d4f3003718603985fcc5c68c','ABCDEF','::ffff:127.0.0.1',1505484711,0,0,'\'\'',0);
+INSERT INTO `nideshop_admin` VALUES (1,'admin','bb87bf23d14b27de74530dec20e234f3','ABCDEF','::ffff:127.0.0.1',1505484711,0,0,'\'\'',0);
 /*!40000 ALTER TABLE `nideshop_admin` ENABLE KEYS */;
 UNLOCK TABLES;
 
