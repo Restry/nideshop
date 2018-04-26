@@ -5,7 +5,7 @@ module.exports = {
   database: 'nideshop',
   prefix: 'nideshop_',
   encoding: 'utf8mb4',
-  host: 'db.vfree.me',
+  host: 'db4free.net',
   port: '3306',
   user: 'nideshop',
   password: 'password01',
