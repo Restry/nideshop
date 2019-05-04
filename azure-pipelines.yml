@@ -22,7 +22,7 @@ steps:
   
 - task: ArchiveFiles@2
   inputs:
-    rootFolderOrFile: '$(System.SourcesDirectory)'
+    rootFolderOrFile: '$(Build.SourcesDirectory)'
     includeRootFolder: true
     archiveFile: '$(Build.ArtifactStagingDirectory)/hosts.zip'
     replaceExistingArchive: true
