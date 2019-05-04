@@ -8,6 +8,12 @@
     "autorestart": true,
     "node_args": [],
     "instances": 4,
+    "ignore_watch": [
+      "node_modules",
+      "logs"
+    ],
+    "error_file": "./logs/app-err.log",
+    "out_file": "./logs/app-out.log",
     "args": [],
     "env": {
       "NODE_ENV": "production"
