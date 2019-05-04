@@ -42,4 +42,4 @@ steps:
   inputs:
     ConnectedServiceName: 'AzureChinaVerified'
     WebAppName: 'windart-api'
-    Package: '$(System.DefaultWorkingDirectory)/hosts.zip'
+    Package: '$(Build.ArtifactStagingDirectory)/hosts.zip'
