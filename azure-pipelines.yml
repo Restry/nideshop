@@ -36,5 +36,5 @@ steps:
     WebAppName: 'windart-origin-api'
     Package: '$(Build.ArtifactStagingDirectory)/hosts.zip'
     RuntimeStack: 'NODE|10.14'
-    StartupCommand: 'node production.js'
+    StartupCommand: 'npm start'
 
