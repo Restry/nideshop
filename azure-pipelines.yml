@@ -38,8 +38,10 @@ steps:
 #     RuntimeStack: 'NODE|10.14'
 #     StartupCommand: 'node production.js'
 
-- task: AzureRmWebAppDeployment@4
-  inputs:
-    ConnectedServiceName: 'AzureChinaVerified'
-    WebAppName: 'windart-api'
-    Package: '$(Build.ArtifactStagingDirectory)/hosts.zip'
+# - task: AzureRmWebAppDeployment@4
+#   inputs:
+#     ConnectedServiceName: 'AzureChinaVerified'
+#     WebAppName: 'windart-api'
+#     Package: '$(Build.ArtifactStagingDirectory)/hosts.zip'
+
+
