@@ -27,14 +27,14 @@ steps:
     archiveFile: '$(Build.ArtifactStagingDirectory)/hosts.zip'
     replaceExistingArchive: true
 
-# - task: AzureRmWebAppDeployment@4
-#   inputs:
-#     ConnectedServiceName: 'Visual Studio Enterprise(1fb2f34c-52f9-4a67-94a3-08006774a48c)'
-#     WebAppKind: 'webAppLinux'
-#     WebAppName: 'windart-origin-api'
-#     Package: '$(Build.ArtifactStagingDirectory)/hosts.zip'
-#     RuntimeStack: 'NODE|10.14'
-#     StartupCommand: 'node production.js'
-
-
 - task: PublishBuildArtifacts@1
+
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectedServiceName: 'Visual Studio Enterprise(1fb2f34c-52f9-4a67-94a3-08006774a48c)'
+    WebAppKind: 'webAppLinux'
+    WebAppName: 'windart-origin-api'
+    Package: '$(Build.ArtifactStagingDirectory)/hosts.zip'
+    RuntimeStack: 'NODE|10.14'
+    StartupCommand: 'node production.js'
+
