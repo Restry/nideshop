@@ -1,6 +1,6 @@
 {
-  "name": "nideshop",
-  "description": "nideshop - open source mini program shop",
+  "name": "windart",
+  "description": "windart - open source mini program shop",
   "version": "1.0.0",
   "scripts": {
     "start": "run-s compile publish",
