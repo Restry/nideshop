@@ -29,12 +29,17 @@ steps:
 
 - task: PublishBuildArtifacts@1
 
+# - task: AzureRmWebAppDeployment@4
+#   inputs:
+#     ConnectedServiceName: 'Visual Studio Enterprise(1fb2f34c-52f9-4a67-94a3-08006774a48c)'
+#     WebAppKind: 'webAppLinux'
+#     WebAppName: 'windart-origin-api'
+#     Package: '$(Build.ArtifactStagingDirectory)/hosts.zip'
+#     RuntimeStack: 'NODE|10.14'
+#     StartupCommand: 'node production.js'
+
 - task: AzureRmWebAppDeployment@4
   inputs:
-    ConnectedServiceName: 'Visual Studio Enterprise(1fb2f34c-52f9-4a67-94a3-08006774a48c)'
-    WebAppKind: 'webAppLinux'
-    WebAppName: 'windart-origin-api'
-    Package: '$(Build.ArtifactStagingDirectory)/hosts.zip'
-    RuntimeStack: 'NODE|10.14'
-    StartupCommand: 'node production.js'
-
+    ConnectedServiceName: 'AzureChinaVerified'
+    WebAppName: 'windart-api'
+    Package: '$(System.DefaultWorkingDirectory)/hosts.zip'
