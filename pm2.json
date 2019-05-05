@@ -3,7 +3,7 @@
   "script": "production.js",
   "cwd": "./",
   "watch": [
-    "./"
+    "./app"
   ],
   "exec_mode": "fork",
   "instances": 4,
