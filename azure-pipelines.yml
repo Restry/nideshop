@@ -35,7 +35,7 @@ steps:
     azureSubscription: 'AzureChinaVerified'
     appType: 'webApp'
     WebAppName: 'windart-api'
-    packageForLinux: '$(System.ArtifactStagingDirectory)/*.zip'
+    packageForLinux: '$(Build.ArtifactStagingDirectory)/*.zip'
     
 # - task: AzureRmWebAppDeployment@4
 #   inputs:
