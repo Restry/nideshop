@@ -1,4 +1,5 @@
 # Node.js
+
 # Build a general Node.js project with npm.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
@@ -28,7 +29,14 @@ steps:
     replaceExistingArchive: true
 
 - task: PublishBuildArtifacts@1
-
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'AzureChinaVerified'
+    appType: 'webApp'
+    WebAppName: 'windart-api'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    
 # - task: AzureRmWebAppDeployment@4
 #   inputs:
 #     ConnectedServiceName: 'Visual Studio Enterprise(1fb2f34c-52f9-4a67-94a3-08006774a48c)'
